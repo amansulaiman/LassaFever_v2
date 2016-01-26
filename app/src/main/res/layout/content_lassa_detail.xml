@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.tech.c3nx.lassafever.LassaDetail"
+    tools:showIn="@layout/activity_lassa_detail"
+    android:orientation="vertical">
+
+    <ScrollView android:id="@+id/textAreaScroller"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:scrollbars="vertical">
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/lassa_detail"
+            android:drawableTop="@drawable/feverrat"
+            android:textSize="8pt"
+            android:gravity="fill"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:drawableBottom="@drawable/potrt"/>
+    </ScrollView>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:id="@+id/sourceText"
+        android:text="Source: WikiPidia"
+        android:gravity="center"
+        android:background="@color/colorPrimary"
+        android:textStyle="bold"
+        android:textSize="7pt"
+        android:textColor="@color/lassDetailbck"/>
+    <!--android:textAlignment="center"-->
+</LinearLayout>
