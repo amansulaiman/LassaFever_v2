@@ -26,11 +26,29 @@ public class MainActivity extends AppCompatActivity {
         gridview.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                if (position == 0){
-                    startLassaDetail();
-                } else if (position == 1){
 
+                if (position==0){
+                    startLassaDetail();
+                }else if(position==1){
+                    startPrevention();
+                }else if(position==2){
+                    startFaq();
+                }else if(position==3){
+                    startCure();
+                }else if(position==4){
+                    startCases();
+                }else if(position==5){
+                    startHelp();
                 }
+                /*switch (position){
+                    case 0 :
+                    case 1:
+                    case 2:
+                    case 3:
+                    case 4:
+                    case 5:
+                    default:
+                }*/
             }
         });
     }
@@ -58,27 +76,18 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
-
-
-
-
-
-
-
-
-
     private void startLassaDetail(){
         Intent intent = new Intent(this, LassaDetail.class);
         startActivity(intent);
     }
 
     private void startPrevention(){
-        Intent intent = new Intent(this, Prevention.class);
+        Intent intent = new Intent(this, Sign_and_Symptoms.class);
         startActivity(intent);
     }
 
     private void startCure(){
-        Intent intent = new Intent(this, Cure.class);
+        Intent intent = new Intent(this, Diagnosis.class);
         startActivity(intent);
     }
 

@@ -55,11 +55,11 @@ public class MainActivityFragment extends Fragment {
 
     public void setUpMenuItems() {
         menu_items = new LinkedHashMap<>();
-        menu_items.put(R.drawable.about, "ABOUT");
+        menu_items.put(R.drawable.about, "ABOUT LASSA");
+        menu_items.put(R.drawable.sign, "SIGN & SYMPTOMS");
         menu_items.put(R.drawable.prevention, "PREVENTION");
-        menu_items.put(R.drawable.cure, "CURE");
-        menu_items.put(R.drawable.faq, "FAQ");
-        menu_items.put(R.drawable.places, "PLACES");
+        menu_items.put(R.drawable.cure, "DIAGNOSIS");
+        menu_items.put(R.drawable.places, "AFFECTED AREA");
         menu_items.put(R.drawable.help2, "HELP");
     }
 
@@ -95,6 +95,7 @@ public class MainActivityFragment extends Fragment {
             textView.setTextAlignment(View.TEXT_ALIGNMENT_CENTER);
 
             imageView.setImageResource(keys.get(position));
+
             textView.setText(data.get(keys.get(position)));
 
             return convertView;

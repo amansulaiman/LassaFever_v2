@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:padding="25dp"
+              android:orientation="horizontal">
+    <ImageView
+        android:src="@android:drawable/sym_def_app_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/image_item_signs"
+        />
+
+    <TextView
+        android:text="@string/text_item_symptom"
+        android:gravity="center_vertical"
+        android:paddingLeft="15dp"
+        android:textStyle="normal"
+        android:id="@+id/text_item_signs"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        android:textSize="17sp"/>
+</LinearLayout>

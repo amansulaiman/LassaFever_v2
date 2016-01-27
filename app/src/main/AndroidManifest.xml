@@ -35,7 +35,7 @@
                 android:value="com.tech.c3nx.lassafever.MainActivity" />
         </activity>
         <activity
-            android:name=".Prevention"
+            android:name=".Sign_and_Symptoms"
             android:label="@string/title_activity_prevention"
             android:parentActivityName=".MainActivity"
             android:theme="@style/AppTheme.NoActionBar">
@@ -44,7 +44,7 @@
                 android:value="com.tech.c3nx.lassafever.MainActivity" />
         </activity>
         <activity
-            android:name=".Cure"
+            android:name=".Diagnosis"
             android:label="@string/title_activity_cure"
             android:parentActivityName=".MainActivity"
             android:theme="@style/AppTheme.NoActionBar">

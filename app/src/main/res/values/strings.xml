@@ -101,25 +101,25 @@
         <b>"\nLassa fever"</b> "is an acute viral illness that occurs in west Africa. The illness was discove"
         "red in 1969 when two missionary nurses died in Nigeria. The virus is named after the town"
         "in Nigeria where the first cases occurred. The virus, a member of the virus family"
-        "Arenaviridae, is a single-stranded RNA virus and is zoonotic, or animal-borne.\n"
+        "Arenaviridae, is a single-stranded RNA virus and is zoonotic, or animal-borne.\n\n"
         "Lassa fever is endemic in parts of west Africa including Sierra Leone, Liberia, Guinea "
         "and Nigeria; however, other neighboring countries are also at risk, as the animal vector"
         "for Lassa virus, the multimammate rat (Mastomys natalensis) is distributed"
         "throughout the region. In 2009, the first case from Mali was reported in a traveler living"
         "in southern Mali; Ghana reported its first cases in late 2011. Isolated cases have also"
         "been reported in Côte d’Ivoire and Burkina Faso and there is serologic evidence of Lassa"
-        "virus infection in Togo and Benin.\n"
+        "virus infection in Togo and Benin.\n\n"
         "The number of Lassa virus infections per year in west Africa is estimated at 100,000 to"
         "300,000, with approximately 5,000 deaths."
         "Unfortunately, such estimates are crude, because surveillance for cases of the disease "
         "is not uniformly performed. In some areas of"
         "Sierra Leone and Liberia, it is known that 10 16 of people admitted to hospitals every "
         "year have Lassa fever, which indicates"
-        "the serious impact of the disease on the population of this region.\n"
+        "the serious impact of the disease on the population of this region.\n\n"
         "In 80percent of cases, the disease is asymptomatic, but in the remaining 20percent, it"
         "takes a complicated course. The virus is estimated to be responsible for about"
         "5,000 deaths annually. The fever accounts for up to one­third of deaths in hospitals"
-        "within the affected regions and 10percent to 16percent of total cases.\n"
+        "within the affected regions and 10percent to 16percent of total cases.\n\n"
     </string>
     <string name="title_activity_cases">Incidents Locations</string>
     <string name="title_activity_cases_map">Map</string>
@@ -151,4 +151,6 @@
         "\nControl of the Mastomys rodent population is impractical, so measures are limited to keeping rodents out of homes and food supplies, as well as maintaining effective personal hygiene. Gloves, masks, laboratory coats, and goggles are advised while in contact with an infected person. These issues in many countries are monitored by a department of public health. In less developed countries, these types of organizations may not have the necessary means to effectively control outbreaks.\n\n\n"
         "Researchers at the USAMRIID facility, where military biologists study infectious diseases, have a promising vaccine candidate. They have developed a replication-competent vaccine against Lassa virus based on recombinant vesicular stomatitis virus vectors expressing the Lassa virus glycoprotein. After a single intramuscular injection, test primates have survived lethal challenge, while showing no clinical symptoms.\n\n"
     </string>
+    <string name="text_item_symptom">diarrhea</string>
+
 </resources>
