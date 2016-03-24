@@ -1,106 +1,27 @@
 <resources>
     <string name="app_name">Lassa Fever</string>
-    <string name="action_settings">Settings</string>
+    <string name="action_feedback">Feedback</string>
     <string name="action_exit">Exit</string>
-    <string name="action_about">About Us</string>
+    <string name="action_about">About Developers</string>
     <string name="title_activity_lassa_detail">About Lassa</string>
-    <string name="title_activity_prevention">Prevention</string>
-    <string name="title_activity_cure">Cure</string>
-    <string name="title_activity_faq">FAQ</string>
-    <string name="title_activity_help">Help</string>
-    <string name="large_text">
-        "Material is the metaphor.\n\n"
-
-        "A material metaphor is the unifying theory of a rationalized space and a system of motion."
-        "The material is grounded in tactile reality, inspired by the study of paper and ink, yet "
-        "technologically advanced and open to imagination and magic.\n"
-        "Surfaces and edges of the material provide visual cues that are grounded in reality. The "
-        "use of familiar tactile attributes helps users quickly understand affordances. Yet the "
-        "flexibility of the material creates new affordances that supercede those in the physical "
-        "world, without breaking the rules of physics.\n"
-        "The fundamentals of light, surface, and movement are key to conveying how objects move, "
-        "interact, and exist in space and in relation to each other. Realistic lighting shows "
-        "seams, divides space, and indicates moving parts.\n\n"
-
-        "Bold, graphic, intentional.\n\n"
-
-        "The foundational elements of print based design typography, grids, space, scale, color, "
-        "and use of imagery guide visual treatments. These elements do far more than please the "
-        "eye. They create hierarchy, meaning, and focus. Deliberate color choices, edge to edge "
-        "imagery, large scale typography, and intentional white space create a bold and graphic "
-        "interface that immerse the user in the experience.\n"
-        "An emphasis on user actions makes core functionality immediately apparent and provides "
-        "waypoints for the user.\n\n"
-
-        "Motion provides meaning.\n\n"
-
-        "Motion respects and reinforces the user as the prime mover. Primary user actions are "
-        "inflection points that initiate motion, transforming the whole design.\n"
-        "All action takes place in a single environment. Objects are presented to the user without "
-        "breaking the continuity of experience even as they transform and reorganize.\n"
-        "Motion is meaningful and appropriate, serving to focus attention and maintain continuity. "
-        "Feedback is subtle yet clear. Transitions are efﬁcient yet coherent.\n\n"
-
-        "3D world.\n\n"
-
-        "The material environment is a 3D space, which means all objects have x, y, and z "
-        "dimensions. The z-axis is perpendicularly aligned to the plane of the display, with the "
-        "positive z-axis extending towards the viewer. Every sheet of material occupies a single "
-        "position along the z-axis and has a standard 1dp thickness.\n"
-        "On the web, the z-axis is used for layering and not for perspective. The 3D world is "
-        "emulated by manipulating the y-axis.\n\n"
-
-        "Light and shadow.\n\n"
-
-        "Within the material environment, virtual lights illuminate the scene. Key lights create "
-        "directional shadows, while ambient light creates soft shadows from all angles.\n"
-        "Shadows in the material environment are cast by these two light sources. In Android "
-        "development, shadows occur when light sources are blocked by sheets of material at "
-        "various positions along the z-axis. On the web, shadows are depicted by manipulating the "
-        "y-axis only. The following example shows the card with a height of 6dp.\n\n"
-
-        "Resting elevation.\n\n"
-
-        "All material objects, regardless of size, have a resting elevation, or default elevation "
-        "that does not change. If an object changes elevation, it should return to its resting "
-        "elevation as soon as possible.\n\n"
-
-        "Component elevations.\n\n"
-
-        "The resting elevation for a component type is consistent across apps (e.g., FAB elevation "
-        "does not vary from 6dp in one app to 16dp in another app).\n"
-        "Components may have different resting elevations across platforms, depending on the depth "
-        "of the environment (e.g., TV has a greater depth than mobile or desktop).\n\n"
-
-        "Responsive elevation and dynamic elevation offsets.\n\n"
-
-        "Some component types have responsive elevation, meaning they change elevation in response "
-        "to user input (e.g., normal, focused, and pressed) or system events. These elevation "
-        "changes are consistently implemented using dynamic elevation offsets.\n"
-        "Dynamic elevation offsets are the goal elevation that a component moves towards, relative "
-        "to the component’s resting state. They ensure that elevation changes are consistent "
-        "across actions and component types. For example, all components that lift on press have "
-        "the same elevation change relative to their resting elevation.\n"
-        "Once the input event is completed or cancelled, the component will return to its resting "
-        "elevation.\n\n"
-
-        "Avoiding elevation interference.\n\n"
-
-        "Components with responsive elevations may encounter other components as they move between "
-        "their resting elevations and dynamic elevation offsets. Because material cannot pass "
-        "through other material, components avoid interfering with one another any number of ways, "
-        "whether on a per component basis or using the entire app layout.\n"
-        "On a component level, components can move or be removed before they cause interference. "
-        "For example, a floating action button (FAB) can disappear or move off screen before a "
-        "user picks up a card, or it can move if a snackbar appears.\n"
-        "On the layout level, design your app layout to minimize opportunities for interference. "
-        "For example, position the FAB to one side of stream of a cards so the FAB won’t interfere "
-        "when a user tries to pick up one of cards.\n\n"
-    </string>
+    <string name="title_activity_sign_symptoms">Signs &amp; Symptoms</string>
+    <string name="title_activity_cure">Diagnosis</string>
+    <string name="title_activity_faq">Prevention</string>
+    <string name="title_activity_help">Report Cases</string>
+    <string name="help_text">
+        "The Governments and Health Organistions are dedicated to provide necessary help in"
+        "curing Lassa Fever.\n\n"
+        "If you have any information to help Government in curing lassa you can provide us "
+        "by calling our help numbers. \n\n"
+        "Lassa Fever is a deadly disease, report any incidents to the nearest hospital"
+        "and do not stay indoor if you start to see its signs and symptoms\n\n"
+        "We dedicated ourselves in curing Lassa throughout Africa.\n\n"
+        "<b>#Cure_Lassa\n</b>"
+         </string>
     <string name="lassa_detail">
-        <b>"\nLassa fever"</b> "is an acute viral illness that occurs in west Africa. The illness was discove"
-        "red in 1969 when two missionary nurses died in Nigeria. The virus is named after the town"
-        "in Nigeria where the first cases occurred. The virus, a member of the virus family"
+        <b>"\nLassa fever"</b> "is an acute viral illness that occurs in west Africa. The illness"
+        " was discovered in 1969 when two missionary nurses died in Nigeria. The virus is named after"
+        "the town in Nigeria where the first cases occurred. The virus, a member of the virus family"
         "Arenaviridae, is a single-stranded RNA virus and is zoonotic, or animal-borne.\n\n"
         "Lassa fever is endemic in parts of west Africa including Sierra Leone, Liberia, Guinea "
         "and Nigeria; however, other neighboring countries are also at risk, as the animal vector"
@@ -148,9 +69,46 @@
         <item>Seizures</item>
     </string-array>
     <string name="prevention">
-        "\nControl of the Mastomys rodent population is impractical, so measures are limited to keeping rodents out of homes and food supplies, as well as maintaining effective personal hygiene. Gloves, masks, laboratory coats, and goggles are advised while in contact with an infected person. These issues in many countries are monitored by a department of public health. In less developed countries, these types of organizations may not have the necessary means to effectively control outbreaks.\n\n\n"
-        "Researchers at the USAMRIID facility, where military biologists study infectious diseases, have a promising vaccine candidate. They have developed a replication-competent vaccine against Lassa virus based on recombinant vesicular stomatitis virus vectors expressing the Lassa virus glycoprotein. After a single intramuscular injection, test primates have survived lethal challenge, while showing no clinical symptoms.\n\n"
+        "\nPrimary transmission of the Lassa virus from its host to humans can be prevented by"
+        "avoiding contact with Mastomys rodents, especially in the geographic regions where"
+        "outbreaks occur. Putting food away in rodent-proof containers and keeping the home clean"
+        "help to discourage rodents from entering homes. Using these rodents as a food source is"
+        "not recommended. Trapping in and around homes can help reduce rodent populations; however,"
+        "the wide distribution of Mastomys in Africa makes complete control of this rodent"
+        "reservoir impractical\n\n"
+        "When caring for patients with Lassa fever, further transmission of the disease through "
+        "person-to-person contact or nosocomial routes can be avoided by taking preventive precautions"
+        "against contact with patient secretions (called VHF isolation precautions or barrier"
+        "nursing methods). Such precautions include wearing protective clothing, such as masks, "
+        "gloves, gowns, and goggles; using infection control measures, such as complete equipment"
+        "sterilization; and isolating infected patients from contact with unprotected persons until"
+        "the disease has run its course.\n\n"
+        "Further, educating people in high-risk areas about ways to decrease rodent populations"
+        "in their homes will aid in the control and prevention of Lassa fever. Other challenges"
+        "include developing more rapid diagnostic tests and increasing the availability of the only"
+        "known drug treatment, ribavirin. Research is presently under way to develop a vaccine"
+        "for Lassa fever.\n\n"
     </string>
     <string name="text_item_symptom">diarrhea</string>
-
+    <string name="diagnosis">
+        "\n<b>Lassa fever</b> is most often diagnosed by using enzyme-linked immunosorbent serologic assays (ELISA), which detect IgM and IgG antibodies as well as Lassa antigen. Reverse transcription-polymerase chain reaction (RT-PCR) can be used in the early stage of disease. The virus itself may be cultured in 7 to 10 days, but this procedure should only be done in a high containment laboratory with good laboratory practices. Immunohistochemistry, performed on formalin-fixed tissue specimens, can be used to make a post-mortem diagnosis.
+\n\nRibavirin, an antiviral drug, has been used with success in Lassa fever patients. It has been shown to be most effective when given early in the course of the illness. Patients should also receive supportive care consisting of maintenance of appropriate fluid and electrolyte balance, oxygenation and blood pressure, as well as treatment of any other complicating infections.
+\n\nAll persons suspected of Lassa fever infection should be admitted to isolation facilities and their body fluids and
+excreta properly disposed of.\n\n
+When Lassa fever infects pregnant women late in their third trimester, induction of delivery is necessary for the mother to have a good chance of survival. This is because the virus has an affinity for the placenta and other highly vascular tissues. The fetus has only a one in ten chance of survival no matter what course of action is taken; hence, the focus is always on saving the life of the mother. Following delivery, women should receive the same treatment as other Lassa fever patients.
+\n\nWork on a vaccine is continuing, with multiple approaches showing positive results in animal trials.\n\n"
+    </string>
+    <string name="select_state">Please choose your State</string>
+    <string-array name="state_options">
+        <item>Kano</item>
+        <item>Jigawa</item>
+        <item>Kebbi</item>
+        <item>Lagos</item>
+        <item>Bauchi</item>
+        <item>Bayelsa</item>
+        <item>Others</item>
+    </string-array>
+    <string name="title_activity_affected_area">Affected Area</string>
+    <string name="title_activity_about_developers">About Developers</string>
+    <string name="action_share">Share App</string>
 </resources>

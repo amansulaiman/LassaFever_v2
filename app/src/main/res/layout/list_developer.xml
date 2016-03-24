@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="15dp"
+    android:weightSum="1">
+
+    <ImageView
+        android:src="@android:drawable/sym_def_app_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/dev_image"
+        />
+
+    <TextView
+        android:text="@string/text_item_symptom"
+        android:gravity="center_vertical"
+        android:paddingLeft="15dp"
+        android:id="@+id/dev_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:fontFamily="sans-serif-condensed"
+        android:layout_alignTop="@+id/dev_image"
+        android:layout_alignLeft="@+id/dev_role"
+        android:layout_alignStart="@+id/dev_role"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:text="@string/text_item_symptom"
+        android:gravity="center_vertical"
+        android:paddingLeft="15dp"
+        android:id="@+id/dev_role"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:fontFamily="sans-serif-condensed"
+        android:layout_weight="3.92"
+        android:layout_below="@+id/dev_name"
+        android:layout_toRightOf="@+id/dev_image"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+</RelativeLayout>

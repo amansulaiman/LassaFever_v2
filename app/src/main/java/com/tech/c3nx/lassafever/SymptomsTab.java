@@ -24,24 +24,27 @@ public class SymptomsTab extends Fragment {
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View rootView = inflater.inflate(R.layout.symptoms, container, false);
 
-        ListView listView = (ListView) rootView.findViewById(R.id.list_item_signs);
+        ListView listView = (ListView) rootView.findViewById(R.id.list_item_symptoms);
         listView.setAdapter(new PreventionsAdapter());
 
         return rootView;
     }
 
-    public static List<String> getStrings() {
+    public static final List<String> getStrings() {
         List<String> strings = new ArrayList<>();
-        strings.add("prevention 1");
-        strings.add("prevention 2");
-        strings.add("prevention 3");
-        strings.add("prevention 4");
-        strings.add("prevention 5");
-        strings.add("prevention 6");
-        strings.add("prevention 7");
-        strings.add("prevention 8");
-        strings.add("prevention 9");
-        strings.add("prevention 10");
+        strings.add("Nausea");
+        strings.add("Constipation");
+        strings.add("Hepatitis");
+        strings.add("Pericarditis");
+        strings.add("Hypertension");
+        strings.add("Hypotension");
+        strings.add("Tachycardia");
+        strings.add("Dyspnoea");
+        strings.add("Pharyngitis");
+        strings.add("Pleuritis");
+        strings.add("Encephalitis");
+        strings.add("Meningitis");
+        strings.add("Seizures");
 
         return strings;
     }
@@ -72,10 +75,47 @@ public class SymptomsTab extends Fragment {
             }
 
             ImageView imageView = (ImageView) convertView.findViewById(R.id.image_item_symptoms);
-            if (position % 2 == 1) {
-                imageView.setImageResource(R.drawable.places);
-            } else {
-                imageView.setImageResource(R.drawable.prevention);
+
+            /*strings.add("Nausea");
+            strings.add("Constipation");
+            strings.add("Hepatitis");
+            strings.add("Pericarditis");
+            strings.add("Hypertension");
+            strings.add("Hypotension");
+            strings.add("Tachycardia");
+            strings.add("Dyspnoea");
+            strings.add("Pharyngitis");
+            strings.add("Pleuritis");
+            strings.add("Encephalitis");
+            strings.add("Meningitis");
+            strings.add("Seizures");*/
+
+            if (position == 0) {
+                imageView.setImageResource(R.drawable.nausea);
+            } else if (position == 1){
+                imageView.setImageResource(R.drawable.constipation);
+            }else if (position == 2){
+                imageView.setImageResource(R.drawable.hepatitis2);
+            }else if (position == 3){
+                imageView.setImageResource(R.drawable.pericarditis);
+            }else if (position == 4){
+                imageView.setImageResource(R.drawable.hypertension);
+            }else if (position == 5){
+                imageView.setImageResource(R.drawable.hypotension);
+            }else if (position == 6){
+                imageView.setImageResource(R.drawable.tachycardia);
+            }else if (position == 7){
+                imageView.setImageResource(R.drawable.dyspnoea);
+            }else if (position == 8){
+                imageView.setImageResource(R.drawable.pharyngitis);
+            }else if (position == 9){
+                imageView.setImageResource(R.drawable.pleuritis);
+            }else if (position ==10){
+                imageView.setImageResource(R.drawable.encephalitis);
+            }else if (position ==11){
+                imageView.setImageResource(R.drawable.meningitis);
+            }else if (position ==12){
+                imageView.setImageResource(R.drawable.seizures);
             }
 
             TextView textView = (TextView) convertView.findViewById(R.id.text_item_symptoms);

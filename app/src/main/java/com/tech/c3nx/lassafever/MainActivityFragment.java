@@ -60,7 +60,7 @@ public class MainActivityFragment extends Fragment {
         menu_items.put(R.drawable.prevention, "PREVENTION");
         menu_items.put(R.drawable.cure, "DIAGNOSIS");
         menu_items.put(R.drawable.places, "AFFECTED AREA");
-        menu_items.put(R.drawable.help2, "HELP");
+        menu_items.put(R.drawable.report_case, "REPORT CASES");
     }
 
     public static class CustomAdapter extends BaseAdapter {

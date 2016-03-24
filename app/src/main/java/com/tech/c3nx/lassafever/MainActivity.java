@@ -1,6 +1,7 @@
 package com.tech.c3nx.lassafever;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
@@ -68,8 +69,28 @@ public class MainActivity extends AppCompatActivity {
         int id = item.getItemId();
 
         //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
-            return true;
+        if (id == R.id.action_feedback) {
+            String[] emails = {
+                    "amansulaiman92@gmail.com"
+            };
+
+            String subject = "LASSA FEVER FEEDBACK";
+
+
+            composeEmail(emails, subject);
+
+        }else if (id == R.id.action_about_dev){
+
+            Intent intent = new Intent(this, AboutDevelopers.class);
+            startActivity(intent);
+        } else if (id ==R.id.action_share){
+
+            String sharemsg = "Hi, install Lassa Fever Application at http://play.google.com to keep yourself updated on Lassa Preventions tips";
+            Intent shareIntent = new Intent(Intent.ACTION_SEND);
+            shareIntent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_WHEN_TASK_RESET);
+            shareIntent.setType("text/plain");
+            shareIntent.putExtra(Intent.EXTRA_TEXT, sharemsg);
+            startActivity(shareIntent);
         }
 
         return super.onOptionsItemSelected(item);
@@ -92,18 +113,30 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void startFaq(){
-        Intent intent = new Intent(this, FAQ.class);
+        Intent intent = new Intent(this, Prevention.class);
         startActivity(intent);
     }
 
     private void startCases(){
-        Intent intent = new Intent(this, Case.class);
+        Intent intent = new Intent(this, AffectedArea.class);
         startActivity(intent);
     }
 
     private void startHelp(){
         Intent intent = new Intent(this, Help.class);
         startActivity(intent);
+    }
+
+    public void composeEmail(String[] addresses, String subject) {
+        Intent intent = new Intent(Intent.ACTION_SENDTO);
+        intent.setData(Uri.parse("mailto:")); // only email apps should handle this
+        intent.putExtra(Intent.EXTRA_EMAIL, addresses);
+        intent.putExtra(Intent.EXTRA_SUBJECT, subject);
+        intent.putExtra(Intent.EXTRA_TEXT, "#Feedback of LASSA FEVER");
+        intent.putExtra(Intent.EXTRA_CC, "ceo@c3nx.com");
+        if (intent.resolveActivity(getPackageManager()) != null) {
+            startActivity(intent);
+        }
     }
 
 }

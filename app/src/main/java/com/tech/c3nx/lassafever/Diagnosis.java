@@ -1,11 +1,12 @@
 package com.tech.c3nx.lassafever;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
+import android.widget.TextView;
 
 public class Diagnosis extends AppCompatActivity {
 
@@ -20,8 +21,12 @@ public class Diagnosis extends AppCompatActivity {
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
+                CharSequence lass =  ((TextView) findViewById(R.id.text_view_cure)).getText();
+                Intent shareIntent = new Intent(Intent.ACTION_SEND);
+                shareIntent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_WHEN_TASK_RESET);
+                shareIntent.setType("text/plain");
+                shareIntent.putExtra(Intent.EXTRA_TEXT, lass + " #Cure_Lassa");
+                startActivity(shareIntent);
             }
         });
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);

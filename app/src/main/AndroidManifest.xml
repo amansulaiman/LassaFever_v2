@@ -8,6 +8,9 @@
          location permissions for the 'MyLocation' functionality. 
     -->
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
 
     <application
         android:allowBackup="true"
@@ -36,7 +39,7 @@
         </activity>
         <activity
             android:name=".Sign_and_Symptoms"
-            android:label="@string/title_activity_prevention"
+            android:label="@string/title_activity_sign_symptoms"
             android:parentActivityName=".MainActivity"
             android:theme="@style/AppTheme.NoActionBar">
             <meta-data
@@ -53,7 +56,7 @@
                 android:value="com.tech.c3nx.lassafever.MainActivity" />
         </activity>
         <activity
-            android:name=".FAQ"
+            android:name=".Prevention"
             android:label="@string/title_activity_faq"
             android:parentActivityName=".MainActivity"
             android:theme="@style/AppTheme.NoActionBar">
@@ -70,6 +73,7 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.tech.c3nx.lassafever.MainActivity" />
         </activity>
+
         <!--
              The API key for Google Maps-based APIs is defined as a string resource.
              (See the file "res/values/google_maps_api.xml").
@@ -85,6 +89,24 @@
         <activity
             android:name=".Case"
             android:label="@string/title_activity_case"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.tech.c3nx.lassafever.MainActivity" />
+        </activity>
+        <activity
+            android:name=".AffectedArea"
+            android:label="@string/title_activity_affected_area"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.tech.c3nx.lassafever.MainActivity" />
+        </activity>
+        <activity
+            android:name=".AboutDevelopers"
+            android:label="@string/title_activity_about_developers"
             android:parentActivityName=".MainActivity"
             android:theme="@style/AppTheme.NoActionBar">
             <meta-data

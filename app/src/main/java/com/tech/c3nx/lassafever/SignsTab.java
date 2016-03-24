@@ -42,7 +42,7 @@ public class SignsTab extends Fragment {
         strings.add("Fever");
         strings.add("Pain behind the chest wall");
         strings.add("Sore throat");
-        strings.add("Diarrhea");
+        strings.add("Diarrhoea");
         strings.add("Pink eye ");
         strings.add("Back pain");
         strings.add("Swelling of the face");
@@ -53,7 +53,7 @@ public class SignsTab extends Fragment {
         strings.add("Vomiting");
         strings.add("Hearing loss");
         strings.add("Tremors");
-        strings.add("Inflammation of the brain)");
+        strings.add("Inflammation of the brain");
 
         return strings;
     }
@@ -108,7 +108,7 @@ public class SignsTab extends Fragment {
             }else if (position ==10){
                 imageView.setImageResource(R.drawable.stomach_pain);
             }else if (position ==11){
-                imageView.setImageResource(R.drawable.diarrhea);
+                imageView.setImageResource(R.drawable.nausea);
             }else if (position ==12){
                 imageView.setImageResource(R.drawable.hearing_loss);
             }else if (position ==13){

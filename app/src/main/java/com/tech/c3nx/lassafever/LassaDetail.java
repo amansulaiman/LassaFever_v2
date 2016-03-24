@@ -27,7 +27,7 @@ public class LassaDetail extends AppCompatActivity {
                 Intent shareIntent = new Intent(Intent.ACTION_SEND);
                 shareIntent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_WHEN_TASK_RESET);
                 shareIntent.setType("text/plain");
-                shareIntent.putExtra(Intent.EXTRA_TEXT, lass + " #Lassa_Detail");
+                shareIntent.putExtra(Intent.EXTRA_TEXT, lass + " #About_Lassa");
                 startActivity(shareIntent);
             }
         });

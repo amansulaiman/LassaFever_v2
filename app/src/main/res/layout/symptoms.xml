@@ -7,8 +7,8 @@
     <ListView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:id="@+id/list_item_signs"
-        >
+        android:id="@+id/list_item_symptoms"
+        android:clickable="false">
 
     </ListView>
 </LinearLayout>
